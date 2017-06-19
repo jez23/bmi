@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+/*var bodyWeight = prompt('Please enter your Body weight in KG')
+var height = prompt('Please enter your height in meters')*/
+
+
+
+function myFunction() {
+var bodyWeight = document.getElementById("userInput1").value;
+var height = document.getElementById("userInput2").value;
+var bmi = bodyWeight / (height * height)
+
+ if (isNaN(bmi)) {
+	alert('The converter only accepts Number values. Please refresh your page and try again.')
+} else {
+	alert('Your BMI is: ' + bmi )
+}
+}
+
+
+</script>
+<form onsubmit="myFunction()">
+    Body Weight:<br>
+<input type="number" id="userInput1"><br>
+Height:<br>
+<input type="number" id="userInput2"><br>
+<input type="submit">
+
+
+</form>
+
+
+</body>
+</html>
